@@ -1,0 +1,13 @@
+#Escribe una función que calcule el área de un triángulo, recibiendo la altura y la base como parámetros.
+#otra función que calcule el área de un círculo recibiendo el radio del mismo.
+
+pi = 3.14
+
+def area(altura , base):
+    return base * altura / 2
+
+def areaCirculo(radio):
+    return pi * radio **2
+
+print('el area del triangulo es : ',area(1.5, 2.5))
+print('el area del circulo es: ',areaCirculo(5))
