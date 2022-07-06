@@ -1,0 +1,19 @@
+# En este segundo ejercicio, tendréis que crear un programa que tenga una clase llamada Alumno que tenga como atributos su nombre y su nota.
+# Deberéis de definir los métodos para inicializar sus atributos, imprimirlos y mostrar un mensaje con el resultado de la nota y si ha aprobado o no.
+class alumno:
+    nombre = 'Jose Daniel'
+    nota = 18
+
+    def aprobacion (nota):
+        if nota > 10:
+            return 'aprobo la materia'
+        else:
+            return 'no aprobo la materia'
+    def impresion():
+        return alumno.nombre
+
+nota = alumno.nota
+
+print(alumno.impresion())
+print(nota)
+print(alumno.aprobacion(nota))
