@@ -1,0 +1,11 @@
+#Escribe una función que pueda decirte si un año (número entero) es bisiesto o no.
+dias = int(input('cuantos dias tienes este año?  '))
+
+def añoBisiesto(dias):
+    if dias == 365:
+        return 'es un año natural'
+    elif dias == 364:
+        return 'es un año bisiesto'
+    else:
+        return 'un año tienes 365 o 364 dias vuelva a intetarlo '
+print(añoBisiesto(dias))
