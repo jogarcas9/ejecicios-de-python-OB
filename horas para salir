@@ -1,0 +1,16 @@
+
+import time
+
+# Inicializamos las variables y formateamos el tiempo para que solo se vean las horas y minutos
+hora = time.strftime('%H')
+minutos = time.strftime('%M')
+
+
+if int(hora) >= 19:
+	print ("Es hora de irse a casa")
+else:
+    faltan_horas = 18 - int(hora)
+    falta_minutos = 59 - int(minutos)
+
+    print('faltan {} y {} minutos para salir'.format(faltan_horas,falta_minutos))
+
