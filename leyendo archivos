@@ -1,0 +1,21 @@
+f = open('ejercicio.txt', 'w')
+f.write('datos1\n')
+f.write('datos2\n')
+f.close()
+
+f = open('C:/Users/jogar/PycharmProjects/OB/ejercicio.txt','a')
+f.write('hola1\n')
+f.write('hola2\n')
+f.close()
+
+f = open('C:/Users/jogar/PycharmProjects/OB/ejercicio.txt','a')
+f.write('adios1\n')
+f.write('adios2\n')
+f.close()
+
+
+f = open('C:/Users/jogar/PycharmProjects/OB/ejercicio.txt','r')
+datos = j.read()
+f.close()
+
+print(datos)
