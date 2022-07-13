@@ -1,0 +1,25 @@
+import pickle
+
+
+class Vehiculo:
+    marca = ''
+    puertas = 0
+
+    def __init__(self, marca, puertas):
+        self.marca = marca
+        self.puertas = puertas
+
+    def getmarca(self):
+        return self.marca
+
+
+v1 = Vehiculo('Toyota', 4)
+f = open('datos.bin', 'wb')
+pickle.dump(v1, f)
+f.close()
+
+f = open('datos.bin', 'rb')
+toyota = pickle.load(f)
+f.close()
+
+print(toyota.getmarca())
