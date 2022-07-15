@@ -1,0 +1,12 @@
+
+lista = []
+count = 0
+while count < 5:
+    pais = input("Ingrese pais: ").capitalize()
+    lista.append(pais)
+
+    count +=1
+
+no_repetidos = set(lista)
+sorted(no_repetidos)
+print(no_repetidos)
