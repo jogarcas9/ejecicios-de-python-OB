@@ -1,0 +1,22 @@
+from functools import reduce
+lista = []
+count = 0
+
+while count < 10:
+    numero = int(input('ingrese numero: '))
+    lista.append(numero)
+    count += 1
+print(lista)
+
+def suma (a , b):
+    return a + b
+
+def impares(x):
+    if x % 2 :
+        return True
+
+    return False
+
+resultado = filter(impares , lista)
+Suma = reduce(suma , resultado)
+print(Suma)
