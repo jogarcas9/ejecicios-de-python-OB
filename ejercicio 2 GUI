@@ -1,0 +1,31 @@
+#En este segundo ejercicio, tendréis que crear una interfaz sencilla la cual debe de contener
+#una lista de elementos seleccionables, también debe de tener un label con el texto que queráis.
+import tkinter
+from tkinter import ttk
+
+window = tkinter.Tk()
+
+window.columnconfigure(0, weight=1)
+window.columnconfigure(1, weight=7)
+selected = tkinter.StringVar()
+selected1 = tkinter.StringVar()
+selected2 = tkinter.StringVar()
+selected3 = tkinter.StringVar()
+selected4 = tkinter.StringVar()
+
+label_ingredietes = tkinter.Label(text='Selecciones ingredientes')
+
+botton1 = ttk.Checkbutton(window, text='Harina', variable=selected)
+botton2 = ttk.Checkbutton(window, text='Huevo', variable=selected1)
+botton3 = ttk.Checkbutton(window, text='Azucar', variable=selected2)
+botton4 = ttk.Checkbutton(window, text='Leche', variable=selected3)
+botton5 = ttk.Checkbutton(window, text='Levadura', variable=selected4)
+
+label_ingredietes.grid(column=0, row=1, pady=5, padx=5)
+botton1.grid(column=0, row=2, pady=5, padx=5)
+botton2.grid(column=0, row=3, pady=5, padx=5)
+botton3.grid(column=0, row=4, pady=5, padx=5)
+botton4.grid(column=0, row=5, pady=5, padx=5)
+botton5.grid(column=0, row=6, pady=5, padx=5)
+
+window.mainloop()
