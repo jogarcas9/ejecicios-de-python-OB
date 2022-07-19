@@ -1,0 +1,50 @@
+
+import tkinter
+from tkinter import ttk
+
+window = tkinter.Tk()
+
+def Reiniciar(event):
+    window.quit()
+    print('Haz reiniciado')
+
+
+def seleccion1(event):
+    print('haz selecciondo Jose Daniel')
+
+def seleccion2(event):
+    print('haz selecciondo Maria Engracia')
+
+def seleccion3(event):
+    print('haz selecciondo Jose Ingacio')
+
+def seleccion4(event):
+    print('haz selecciondo Maximiliano')
+
+
+window.columnconfigure(0, weight=1)
+window.columnconfigure(1, weight=5)
+selected = tkinter.StringVar()
+
+botton1 = ttk.Radiobutton(window, text='Jose Daniel', value= '1', variable=selected)
+botton2 = ttk.Radiobutton(window, text='Maria Engracia', value= '2', variable=selected)
+botton3 = ttk.Radiobutton(window, text='Jose ingnacio', value= '3', variable=selected)
+botton4 = ttk.Radiobutton(window, text='Maximiliano', value= '4', variable=selected)
+botton5 = tkinter.Button(window, text='Reinicio')
+
+
+botton1.grid(column=0, row=1, pady=5, padx=5)
+botton2.grid(column=0, row=2, pady=5, padx=5)
+botton3.grid(column=0, row=3, pady=5, padx=5)
+botton4.grid(column=0, row=4, pady=5, padx=5)
+botton5.grid(column=0, row=5, pady=5, padx=5)
+
+botton1.bind('<Button-1>', seleccion1)
+botton2.bind('<Button-1>', seleccion2)
+botton3.bind('<Button-1>', seleccion3)
+botton4.bind('<Button-1>', seleccion4)
+botton5.bind('<Button-1>', Reiniciar)
+
+
+
+window.mainloop()
